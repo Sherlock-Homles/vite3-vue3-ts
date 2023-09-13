@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "element-plus": "^2.3.12",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -25,6 +26,8 @@
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
   },

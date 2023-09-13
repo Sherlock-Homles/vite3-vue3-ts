@@ -10,3 +10,11 @@ import App from "./App.vue";
 // app.mount('#app')
 
 createApp(App).mount("#app");
+
+// 完整引入Element Plus
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+const app = createApp(App)
+
+app.use(ElementPlus)

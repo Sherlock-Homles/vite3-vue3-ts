@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
+
+const jumpRouter= () => {
+  alert(23333)
+}
 </script>
 
 <template>
@@ -13,6 +17,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <el-button type="primary" @click="jumpRouter">跳 转</el-button>
 </template>
 
 <style scoped>
