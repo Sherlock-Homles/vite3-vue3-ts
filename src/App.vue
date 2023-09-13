@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 
-const jumpRouter= () => {
-  alert(23333)
-}
+const jumpRouter = () => {
+  alert(23333);
+};
 </script>
 
 <template>

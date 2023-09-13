@@ -12,9 +12,9 @@ import App from "./App.vue";
 createApp(App).mount("#app");
 
 // 完整引入Element Plus
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(ElementPlus)
+app.use(ElementPlus);
