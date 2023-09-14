@@ -5,13 +5,15 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 export {}
 
-declare module "vue" {
+declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: (typeof import("element-plus/es"))["ElButton"];
-    ElTable: (typeof import("element-plus/es"))["ElTable"];
-    ElTableColumn: (typeof import("element-plus/es"))["ElTableColumn"];
-    FirstTable: (typeof import("./src/components/FirstTable.vue"))["default"];
-    HelloWorld: (typeof import("./src/components/HelloWorld.vue"))["default"];
-    Table: (typeof import("./src/components/Table.vue"))["default"];
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
+    FirstTable: typeof import('./src/components/FirstTable.vue')['default']
+    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+    Table: (typeof import("./src/components/Table.vue"))["default"]
   }
 }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-defineProps<{ msg: string }>()
-
 const tableData = [
   {
     date: '2016-05-03',
@@ -26,9 +24,7 @@ const tableData = [
 </script>
 
 <template>
-  <div>{{ msg }}</div>
-  <el-button type="primary">Primary</el-button>
-
+  <div>login</div>
   <el-table :data="tableData" stripe style="width: 100%">
     <el-table-column prop="date" label="Date" width="180" />
     <el-table-column prop="name" label="Name" width="180" />

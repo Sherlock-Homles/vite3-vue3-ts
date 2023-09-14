@@ -18,9 +18,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    /* Element Plus */
-    "types": ["element-plus/global"]
+    "noFallthroughCasesInSwitch": true
   },
   // 新增 .eslintrc.cjs 以及 vite.config.ts
   "include": [
@@ -31,5 +29,6 @@
     ".eslintrc.cjs",
     "vite.config.ts"
   ],
+  "types": ["node"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
