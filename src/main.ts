@@ -1,10 +1,10 @@
 // 引入的不再是Vue构造函数，引入的是一个名为createApp的工厂函数
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
 
 // 创建应用实例对象——app(类似于之前Vue2中的vm，但app比vm更"轻")
-const app = createApp(App)
+const app = createApp(App);
 // console.log('实例对象',app);
 // 挂载
 // app.mount('#app')
@@ -12,12 +12,12 @@ const app = createApp(App)
 // createApp(App).mount('#app')
 
 // 完整引入Element Plus
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-app.use(ElementPlus)
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
+app.use(ElementPlus);
 
 // 引入vue-router
-import router from './router'
-app.use(router)
+import router from "./router";
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");
