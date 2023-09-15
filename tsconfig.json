@@ -18,7 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* 解决深层获取不到路径的问题 */
+    // "noImplicitAny": false,
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      // @ 路径配置
+      "@/*": ["src/*"]
+    }
   },
   // 新增 .eslintrc.cjs 以及 vite.config.ts
   "include": [

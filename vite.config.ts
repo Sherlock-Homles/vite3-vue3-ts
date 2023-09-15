@@ -1,13 +1,14 @@
-// import { fileURLToPath, URL } from 'url'
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import AutoImport from "unplugin-auto-import/vite";
-import Components from "unplugin-vue-components/vite";
-import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import { defineConfig } from 'vite'
+// 引入path
+import path from 'path'
+import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./",
+  base: './',
   plugins: [
     vue(),
     AutoImport({
@@ -17,9 +18,10 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  /* 路径配置 */
   resolve: {
     alias: {
-      // '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': path.join(__dirname, './src'),
     },
   },
-});
+})
