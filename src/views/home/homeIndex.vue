@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-const text = 'welcome home!'
-const router = useRouter()
+import { useRouter } from "vue-router";
+const text = "welcome home!";
+const router = useRouter();
 const toLogin = () => {
-  router.push('/login')
-}
+  router.push("/login");
+};
 </script>
 
 <template>
