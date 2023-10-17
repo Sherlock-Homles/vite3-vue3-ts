@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-const text = "welcome home!";
-const router = useRouter();
+import { useRouter } from 'vue-router'
+const text = 'welcome home!'
+const router = useRouter()
 const toLogin = () => {
-  router.push("/login");
-};
+  router.push('/login')
+}
 </script>
 
 <template>
@@ -13,6 +13,7 @@ const toLogin = () => {
     <el-button type="primary" plain>注 册</el-button>
   </div>
   <div>{{ text }}</div>
+  <div>提交测试</div>
 </template>
 
 <style scoped>
