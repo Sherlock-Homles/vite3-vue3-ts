@@ -1,16 +1,24 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "@/views/home/homeIndex.vue";
-import Login from "@/views/login/loginIndex.vue";
+import type { App } from 'vue'
+import ServerRouter from './modules/router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
-const routes = [
-  { name: "home", path: "/", component: Home },
-  { name: "login", path: "/login", component: Login },
-];
+export const publicRoutes: Array<RouteRecordRaw> = [...ServerRouter]
 
 const router = createRouter({
-  history: createWebHashHistory(), //路由模式
-  routes: routes,
-});
+  history: createWebHashHistory(),
+  routes: publicRoutes,
+})
 
-// 导航守卫
-export default router;
+/* 初始化路由表 */
+export function resetRouter() {
+  router.getRoutes().forEach((route) => {
+    const { name } = route
+    if (name) {
+      router.hasRoute(name) && router.removeRoute(name)
+    }
+  })
+}
+/* 导出 setupRouter */
+export const setupRouter = (app: App<Element>) => {
+  app.use(router)
+}
