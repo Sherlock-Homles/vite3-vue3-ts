@@ -168,6 +168,7 @@ const title = "迷子でもいい、迷子でも進め。";
       background-image: url(../../../public/images/icon/icon-facebook.svg);
     }
     .btn-x {
+      background-size: 20px 20px;
       background-image: url(../../../public/images/icon/X_black.png);
     }
     .prompt {

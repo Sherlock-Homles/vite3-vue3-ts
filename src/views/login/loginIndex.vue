@@ -23,7 +23,7 @@ const success = (msg) => {
   isShow.value = false;
   console.log("验证通过" + msg);
   //通过验证跳转到home首页
-  router.push("/login");
+  router.push("/admin");
 };
 //用户点击遮罩层，关闭模态框
 const close = () => {
@@ -144,6 +144,7 @@ const fail = () => {
             data-label="x"
           >
             <el-image
+              class="png"
               src="../../../public/images/icon/X_black.png"
               fit="contain"
             />
@@ -265,7 +266,7 @@ const fail = () => {
         font-size: 14px;
         line-height: 22px;
         display: flow-root;
-        margin-top: 20px;
+        margin: 20px 0;
       }
     }
     .btn-gplus,
@@ -298,21 +299,13 @@ const fail = () => {
       height: 40px;
       :deep() {
         .el-image {
-          width: 24px;
           position: absolute;
           left: 24px;
         }
       }
-    }
-    .btn-apple {
-    }
-    .btn-gplus {
-    }
-    .btn-weibo {
-    }
-    .btn-facebook {
-    }
-    .btn-x {
+      .png {
+        width: 20px;
+      }
     }
     .prompt {
       color: #5c5c5c;
