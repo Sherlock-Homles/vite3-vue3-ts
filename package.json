@@ -15,7 +15,8 @@
   "dependencies": {
     "element-plus": "^2.3.12",
     "vue": "^3.3.4",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "vue3-puzzle-vcode": "^1.0.16"
   },
   "devDependencies": {
     "@types/node": "^20.6.1",
@@ -31,6 +32,7 @@
     "postcss-html": "^1.5.0",
     "postcss-less": "^6.0.0",
     "prettier": "^3.0.3",
+    "sass": "^1.69.3",
     "stylelint": "^15.10.3",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-less": "^2.0.0",

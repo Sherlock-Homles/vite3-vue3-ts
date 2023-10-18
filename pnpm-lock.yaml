@@ -14,6 +14,9 @@ dependencies:
   vue-router:
     specifier: ^4.0.13
     version: 4.0.13(vue@3.3.4)
+  vue3-puzzle-vcode:
+    specifier: ^1.0.16
+    version: 1.0.16
 
 devDependencies:
   '@types/node':
@@ -55,6 +58,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
+  sass:
+    specifier: ^1.69.3
+    version: 1.69.3
   stylelint:
     specifier: ^15.10.3
     version: 15.10.3(typescript@5.0.2)
@@ -87,7 +93,7 @@ devDependencies:
     version: 0.25.2(vue@3.3.4)
   vite:
     specifier: ^4.4.5
-    version: 4.4.5(@types/node@20.6.1)
+    version: 4.4.5(@types/node@20.6.1)(sass@1.69.3)
   vue-tsc:
     specifier: ^1.8.5
     version: 1.8.5(typescript@5.0.2)
@@ -692,7 +698,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.4.5(@types/node@20.6.1)
+      vite: 4.4.5(@types/node@20.6.1)(sass@1.69.3)
       vue: 3.3.4
     dev: true
 
@@ -1709,6 +1715,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /immutable@4.3.4:
+    resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
+    dev: true
+
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -2424,6 +2434,16 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /sass@1.69.3:
+    resolution: {integrity: sha512-X99+a2iGdXkdWn1akFPs0ZmelUzyAQfvqYc2P/MPTrJRuIRoTffGzT9W9nFqG00S+c8hXzVmgxhUuHFdrwxkhQ==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.4
+      source-map-js: 1.0.2
+    dev: true
+
   /scule@1.0.0:
     resolution: {integrity: sha512-4AsO/FrViE/iDNEPaAQlb77tf0csuq27EsVpy6ett584EcRTp6pTDLoGWVxCD77y5iU5FauOvhsI4o1APwPoSQ==}
     dev: true
@@ -2918,7 +2938,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.5(@types/node@20.6.1):
+  /vite@4.4.5(@types/node@20.6.1)(sass@1.69.3):
     resolution: {integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2950,6 +2970,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.29
       rollup: 3.29.1
+      sass: 1.69.3
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
@@ -3014,6 +3035,10 @@ packages:
       semver: 7.5.4
       typescript: 5.0.2
     dev: true
+
+  /vue3-puzzle-vcode@1.0.16:
+    resolution: {integrity: sha512-f6F0Q5yDuDTe7WAA2/ZG8lIUO3chvG+Nh1OOpeIJVtgAvoIney+77a/yK6A+AsWwSJCCQt5ewnsqTk/ElrwiNw==}
+    dev: false
 
   /vue@3.3.4:
     resolution: {integrity: sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==}
