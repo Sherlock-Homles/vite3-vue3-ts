@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const userInfo = {
-  userName: '长崎素世',
-  useravatar: '../../../public/images/wallpaper/second.png',
-}
+  userName: "长崎素世",
+  useravatar: "../../../public/images/wallpaper/second.png",
+};
 </script>
 <template>
   <div class="user">

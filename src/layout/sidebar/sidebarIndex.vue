@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 // sidebarItem 项组件
-import SideBarItem from './sidebarItem.vue'
-import UserInfo from '../header/UserInfo.vue'
-import { useRouter } from 'vue-router'
+import SideBarItem from "./sidebarItem.vue";
+import UserInfo from "../header/UserInfo.vue";
+import { useRouter } from "vue-router";
 // 拿到路由列表，过滤我们不想要的
-const router = useRouter()
-const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow)
+const router = useRouter();
+const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow);
 </script>
 <template>
   <div class="sidebar">
