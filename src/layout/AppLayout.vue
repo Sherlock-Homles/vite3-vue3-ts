@@ -5,7 +5,6 @@
       <SideBar></SideBar>
     </el-aside>
     <el-container>
-      <el-header>Header</el-header>
       <el-main>
         <!-- 子路由出口 -->
         <router-view />
@@ -15,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import SideBar from "./sidebar/sidebarIndex.vue";
+import SideBar from './sidebar/sidebarIndex.vue'
 </script>
 
 <style scoped lang="scss">
@@ -26,7 +25,7 @@ import SideBar from "./sidebar/sidebarIndex.vue";
   background-color: #b3c0d1;
 }
 .el-aside {
-  width: auto;
+  width: 10%;
   background-color: #304156;
 }
 .el-main {

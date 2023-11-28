@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 // sidebarItem 项组件
-import SideBarItem from "./sidebarItem.vue";
-import { useRouter } from "vue-router";
+import SideBarItem from './sidebarItem.vue'
+import UserInfo from '../header/UserInfo.vue'
+import { useRouter } from 'vue-router'
 // 拿到路由列表，过滤我们不想要的
-const router = useRouter();
-const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow);
+const router = useRouter()
+const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow)
 </script>
 <template>
   <div class="sidebar">
@@ -27,6 +28,11 @@ const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow);
       <SideBarItem :routerList="routerList" />
     </el-menu>
 
+    <!-- 用户头像及消息 -->
+    <div class="userInfo">
+      <UserInfo></UserInfo>
+    </div>
+
     <!-- active-text-color：当前菜单项被选中时，字体的颜色 -->
     <!-- background-color：这个menu菜单的背景色 -->
     <!-- default-active：	当前激活菜单的 index -->
@@ -48,7 +54,7 @@ const routerList = router.getRoutes().filter((v) => v.meta && v.meta.isShow);
     font-size: 20px;
   }
   .el-menu {
-    height: calc(100% - 48px);
+    height: 85vh;
     border-right: 0;
     overflow: auto;
   }

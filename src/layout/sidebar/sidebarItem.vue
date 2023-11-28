@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { RouteRecordRaw } from "vue-router";
+import { RouteRecordRaw } from 'vue-router'
 // 做类型限制，解决ts类型报错
 type CustomRouteRecordRaw = RouteRecordRaw & {
   meta: {
-    isShow?: boolean;
-  };
-};
+    isShow?: boolean
+  }
+}
 const props = defineProps({
   // 拿到父组件传递过来的路由列表进行渲染
   routerList: {
     type: Array as () => CustomRouteRecordRaw[],
     required: true,
   },
-});
+})
 </script>
 <template>
   <template v-for="item in props.routerList" :key="item.path">
